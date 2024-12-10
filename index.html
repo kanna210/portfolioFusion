@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Noodle Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #7b2c12;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #d9534f;
+            color: white;
+        }
+
+        .logo-btn {
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-btn:hover {
+            background-color: #d9534f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-btn img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+
+        .footer-logo {
+            background-color: white;
+            border-radius: 50%;
+            width: 100px;
+            height: auto;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #732E1D;
+            padding: 20px;
+            color: white;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+
+        .banner img {
+            width: 60%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+        }
+
+        .location {
+            text-align: center;
+            background-color: #eaeaea;
+            padding: 2rem;
+        }
+
+        .featured {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .featured img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 2rem;
+        }
+
+        .cta-box {
+            text-align: center;
+            flex: 1;
+        }
+
+        .cta-boxp {
+            margin-top: 130px;
+            text-align: center;
+            flex: 1;
+        }
+
+
+        .cta-box img {
+            width: 80%;
+            height: auto;
+        }
+
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            margin-top: 1rem;
+            background-color: #b22c10;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #7b2c12;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social-media {
+            position: absolute;
+            right: 80px;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+
+
+        .social-media img {
+            width: 25px;
+            height: auto;
+        }
+
+        .go-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 20%;
+            background-image: url('images/up button.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .go-up:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button class="logo-btn" onclick="window.location.href='index.html'">
+                <img src="images/FUSION LOGO.png" alt="Fusion Logo">
+            </button>
+            <ul class="homeEtc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location/Contact</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>RATED BEST ASIAN FOOD IN ATHENS</h1>
+            <img src="images/Lo Mein.png" alt="Lo Mein noodle">
+        </section>
+
+        <section class="location">
+            <h2>Located on the corner of S. Congress St. and W. Union St.</h2>
+            <p>Easy access! Just minutes from campus. Click <a href="location.html">here</a> to view the map!</p>
+        
+
+        </section>
+
+        <section class="featured">
+            <h2>Noodles Galore!</h2>
+            <img src="images/General Tso's Chicken.png" alt="fried Chicken with sauce">
+            <p>Bring The Whole Family For a Delicious Authentic Meal!</p>
+        </section>
+
+        <section class="cta">
+            <div class="cta-boxp">
+                <h3>Try Our Top Rated Pho and pad Thai!</h3>
+                <a href="https://order.toasttab.com/online/fusion-noodle-company" class="btn">Order Online</a>
+            </div>
+
+            <div class="cta-box">
+                <h3>😋Slurp Up Pho and Pad Thai!🤤</h3>
+                <img src="images/padThai.png" alt="Pad Thai Image">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <address>
+                740-589-5511 <br>
+                30 W Union St, Athens, OH <br>
+                <strong>Open now</strong> – Closes at 10:30 PM
+            </address>
+            <a href="https://order.toasttab.com/online/fusion-noodle-company" class="btn">Order Online</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/Instagram.png" alt="Instagram Icon"></a>
+        </div>
+    </footer>
+
+    <button class="go-up" onclick="scrollToTop()"></button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

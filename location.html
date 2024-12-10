@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Noodle Company</title>
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d0e00;
+    padding: 10px 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #4d0e00;
+}
+
+
+.location-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location .map img {
+    width: 70%;
+    height: auto;
+    max-width: 600px;
+}
+
+.location .location-text {
+    width: 45%;
+    font-size: 18px;
+}
+
+.location .location-text p {
+    margin-bottom: 10px;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d0e00;
+}
+
+
+.hours {
+    text-align: center;
+}
+
+.hours-list {
+    display: inline-block;
+}
+
+.hours-list p {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hours-list span {
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #4d0e00;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-btn {
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+.logo-btn:hover {
+            background-color: #d9534f;
+            transform: scale(1.1); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }        
+
+.logo-btn img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        
+
+.footer-logo img {
+background-color: white;
+width: 50px;
+height: 50px; 
+border-radius: 50%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-logo img:hover {
+    background-color: #d9534f;
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.social a img {
+    width: 20px;
+    margin: 0 5px;
+    border-radius: 40%;
+    background-color: transparent; 
+}
+
+
+.footer-info p {
+    margin: 0;
+}
+
+.order-online button {
+    background-color: #922e12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.order-online button:hover {
+    background-color: #cf4825;
+}
+
+.social p {
+    margin: 0;
+}
+
+.social a img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.social a img:hover {
+    opacity: 0.8;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    
+</head>
+<body>
+
+ 
+    <header>
+        <button class="logo-btn" onclick="window.location.href='index.html'">
+            <img src="images/FUSION LOGO.png" alt="Fusion Logo">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="location">
+        <h1>Location</h1>
+        <div class="location-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.2568171898884!2d-82.1051345238493!3d39.32776657163548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884873bc253851af%3A0x469015bf96a3bd47!2sFusion%20Noodle%20Company!5e0!3m2!1sen!2sus!4v1732724584300!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-text">
+                <p>Located on 30 W Union St, Athens, OH 45701</p>
+                <p><em>Come give us a visit!</em></p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Call or order over the phone at:</p>
+        <p class="phone-number">📞740-589-5511📞</p>
+    </section>
+<hr>
+
+    <section class="hours">
+        <h2>Store Hours</h2>
+        <div class="hours-list">
+            <p><span>Monday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Tuesday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Wednesday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Thursday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Friday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Saturday:</span> 11:00 AM - 10:30 PM</p>
+            <p><span>Sunday:</span> 12:00 PM - 10:30 PM</p>
+            <p>open hours might differ on holiday</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+            <img src="images/FUSION LOGO.png" alt="Fusion Noodle Logo">
+        </a>
+
+        </div>
+        <div class="footer-info">
+            <p>740-589-5511</p>
+            <p>30 W Union St, Athens, OH</p>
+        </div>
+        <div class="order-online">
+            <a href="https://order.toasttab.com/online/fusion-noodle-company"><button>Order Online</button></a>
+        </div>
+        <div class="social">
+            <p>follow us!</p>
+            <a href="https://www.facebook.com/p/Fusion-Noodle-Company-100063771872712/"><img src="images/faceBookIcon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/explore/locations/628288600517646/fusion-noodle-company/"><img src="images/instaIcon.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

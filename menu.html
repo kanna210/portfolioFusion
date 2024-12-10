@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Noodle Company Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9D2B23;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-btn {
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            width: 120px;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .logo-btn img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .logo-btn:hover {
+            background-color: #d9534f;
+        }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FF4D30;
+}
+
+.menu-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-image img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.appetizers h2 {
+    color: #9D2B23;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100px;
+    height: auto;
+}
+
+.menu-item p {
+    font-size: 16px;
+}
+
+/* Order Online Button */
+.order-online {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.order-btn {
+    background-color: #FF4D30;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background-color: #E73C2C;
+}
+
+/* Footer */
+footer {
+    background-color: #9D2B23;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons {
+    margin-right: 20px;
+}
+
+.footer-icons a img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.footer-icons a:hover {
+    opacity: 0.7;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <button class="logo-btn" onclick="window.location.href='index.html'">
+                <img src="images/FUSION LOGO.png" alt="Fusion Logo">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="location.html">Location / Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <h1>Menu</h1>
+        <div class="menu-image">
+            <img src="images/familynoodle.jpg" alt="family members eat noodle">
+        </div>
+        <div class="appetizers">
+            <h2>popular choices</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/padThai.png" alt="Pad Thai">
+                    <p><strong>Pad thai</strong><br>Banh Pho noodles sauteed with local eggs - $13.25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/IMG_3063.jpg" alt="Fusion Rice Noodles">
+                    <p><strong>Fusion Rice Noodles</strong><br>Rice noodles with eggs, beansprouts and carrots - $13.25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/IMG_3046.jpg" alt="Fried Pot Stickers">
+                    <p><strong>Fried Pot Stickers</strong><br>Served with house-made soy-ginger - $5.55</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/IMG_3058.jpg" alt="Fusion Spicy Pepper Sauce Stir-fry">
+                    <p><strong>Fusion Spicy Pepper Sauce Stir-fry</strong><br>Caramelized organic broccoli, red pepper, and celery stir-fried with our Fusion sauce. - $13.25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/IMG_3069.jpg" alt="California Burrito">
+                    <p><strong>California Burrito</strong><br>Filled with imitation crab, Masago, cucumber, lettuce, avocado, and eel sauce. It's sure to bring some sunshine to your day. - $15.55</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    
+ <div class="order-online">
+    <a href="https://order.toasttab.com/online/fusion-noodle-company" class="order-btn">Order Online</a>
+</div>
+
+
+<footer>
+    <div class="footer-info">
+        <p><strong>Fusion Noodle Company</strong><br>
+        30 W Union St, Athens, OH<br>
+        Call us: <a href="tel:740-589-5511">740-589-5511</a><br>
+        Closes at 10:30 PM</p>
+    </div>
+    <div class="footer-icons">
+        <a href="https://www.facebook.com/"><img src="images/faceBookIcon.jpg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="images/instaIcon.jpg" alt="Instagram"></a>
+    </div>
+</footer>
+</body>
+</html>

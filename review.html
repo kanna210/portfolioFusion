@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Noodle Company Reviews</title>
+    <link rel="stylesheet" href="review.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; 
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.logo-btn {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px; 
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+.logo-btn:hover {
+    background-color: #d9534f;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100px;;
+    height: auto;
+}
+
+.logo-btn:hover .logo {
+    filter: brightness(0.8);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+    background-color: #2c3e50; 
+}
+
+.reviews-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.stars {
+    font-size: 24px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reviewer img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: grey;
+}
+
+.review-button {
+    display: inline-block;
+    background-color: #e74c3c; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+    cursor: pointer; 
+}
+
+.review-button:hover {
+    background-color: #c0392b; 
+}
+
+footer {
+    background-color: #e03e27;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    background-color: white; 
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px ; 
+    left: 10px ; 
+    margin: 20px;
+    width: 100px; 
+    height: auto; 
+    z-index: 1000; 
+}
+
+.footer-content {
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.social-media {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-media .facebook img {
+        width: 15px;
+        height: auto;
+    }
+
+    .social-media .instagram img {
+        width: 25px; 
+        height: auto;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="logo-btn" onclick="window.location.href='index.html'">
+            <img src="images/FUSION LOGO.png" alt="Fusion Logo" class="logo">
+        </button>
+            <h1>Fusion Noodle Company</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location / Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p>"Great food and service, give it a try!"</p>
+            <div class="reviewer">
+                <img src="images/Natsuko.jpg" alt="Reviewr Natsu">
+                <span>Natsu</span>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p>"Everything I've eaten here has been top notch."</p>
+            <div class="reviewer">
+                <img src="images/Satoru.jpg" alt="Reviewer Satoru">
+                <span>Satoru</span>
+            </div>
+        </div>
+
+        <p class="disclaimer">*All reviews pulled from Google</p>
+
+        <div>
+            <a href="leaveReview.html" class="review-button">Leave a review? Click here!</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/FUSION LOGO.png" alt="Fusion Noodle Company Logo" class="footer-logo">
+            <div class="contact-info">
+                <p>740-589-5511</p>
+                <p>30 W Union St, Athens, OH</p>
+                <a href="https://order.toasttab.com/online/fusion-noodle-company">Order Online</a>
+                <p>Open now, Closes at 10:30PM</p>
+
+                <div class="social-media">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/"><img src="images/Facebook.png" alt="Facebook Icon"></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/"><img src="images/Instagram.png" alt="Instagram Icon"></a>
+                    </div>
+                </div>
+    </footer>
+</body>
+</html>
